@@ -1,0 +1,621 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    color: white;
+    text-transform: capitalize;
+    text-decoration: none;
+    
+}
+.img , .img-logo{
+    padding: 5px 0px;
+    margin: auto;
+}
+:root{
+    --primary-color: rgb(236, 160, 160);
+
+}
+/* OUTER CONTAINER */
+.container{
+    display: grid;
+   grid-template-columns: 1fr 4fr;
+    grid-template-areas: 
+    "side-nav right-section right-section right-section "
+    "side-nav right-section right-section right-section "
+    "side-nav right-section right-section right-section "
+    "side-nav right-section right-section right-section ";
+    /* border: 2px solid greenyellow; */
+}
+/* .box{
+    border: 2px solid violet;
+} */
+#side-nav{
+    grid-area: side-nav;
+    height: 2000px;  
+    background-color: #0a1727; 
+    box-sizing: border-box;
+}
+#side-nav .img-logo, h3,p{
+    text-align: center;
+    border-radius: 55px;
+
+
+}
+i::before{
+    font: normal normal normal 24px/1 "Material Design Icons";
+}
+#right-section{
+    grid-area: right-section;
+    box-sizing: border-box;
+}
+
+#side-nav ul{
+    display: flex;
+    padding: 0px 18px;
+    flex-direction: column;
+}
+#side-nav ul li{
+   margin: 13px 0px;
+   list-style: none;
+   
+
+}
+#side-nav ul li h3{
+    padding: 5px 0px;
+    font-size: 29px;
+}
+#side-nav ul li a{
+    display: flex;
+    flex-direction: row;
+    padding: 6px 1px;
+}
+#side-nav ul li a:hover{
+    background-color: #640e32;
+    border-radius: 12px;
+    font-style:inherit;
+}
+.notify-div{
+    display: flex;
+}
+.sale-notify{
+    margin: 0px 5px;
+}
+#side-nav ul li a .notify{
+    border: 1px solid;
+    border-radius: 9px;
+    margin: 0px 34px;
+    padding: 2px;
+    color: #89e1ef;
+}
+
+.font1{
+    font-size: 18px;
+    font-weight: bolder;
+    padding: 0px 0px 0px 10px;
+}
+
+.card{
+    border: 2px solid;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 15px;
+    margin: 65px 7px 0px 7px;
+}
+.headname {
+    display: flex;
+    justify-content: center;
+
+}
+.headname h6{
+    font-size: 31px;
+    color: #0a1727;
+}
+.headname span{
+    margin: 16px 12px;
+    color: #0a1727;
+    border: 2px solid green;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: green;
+}
+.plan{
+    align-self: center;
+    color: #008000;
+    font-weight: bolder;
+    font-size: 17px;
+    padding: 7px 1px;
+}
+.plainmail{
+    color: #99c982;
+    
+    
+}
+
+#right-section{
+    background-color: #eaeff8;
+}
+
+/* now style on right section  */
+.navbar{
+    /* border: 2px solid white; */
+    display: flex;
+    width: 100%;
+    height: 112px;
+    align-items: center;
+}
+.nav-cont{
+    height: 87px;
+    display: flex;
+    width: 100%;
+    /* border: 2px solid wheat; */
+    margin: 5px 21px;
+    align-items: center;
+    background-color: white;
+}
+.add-product{
+    height: 28px;
+    width: 200px;
+    display: flex;
+    margin: 16px;
+    align-items: center;
+}
+.add-p-but{
+    background: blue;
+    height: 40px;
+}
+.addproduct{
+    margin: 16px;
+    color: black;
+    font-weight: bolder;
+}
+.search{
+    display: flex;
+    width: 314px;
+    align-items: center;
+}
+.searchbar{
+    display: flex;
+    margin: 6px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+.searchinput{
+    border: none;
+    margin: 6px;
+}
+.searchbtn{
+    width: 65px;
+    height: 29px;
+    background: blue;
+    font-weight: bolder;
+    border-radius: 8px;
+    box-shadow: 4px 4px cornflowerblue;
+}
+
+.count-indicator{
+    
+    height: 47px;
+    width: 63px;
+    display: flex;
+    align-items: center;
+    justify-content: normal;
+    padding: 0px 0px 2px 5px;
+}
+
+.rock{
+    margin: 1px -11px 12px -14px;
+    color: #f1eef3;
+    background-color: #e20c0c;
+    height: 20px;
+    width: 19px;
+    text-align: center;
+    border-radius: 50%;
+    z-index: 1;
+}
+.iconbel{
+    margin: 5px -4px 0px 7px;
+    overflow: visible;
+    font-size: 38px;
+    filter: drop-shadow(2px 4px 6px black);
+}
+.ulnav{
+    display: flex;
+}
+.dropdown{
+    display: flex;
+  
+    position: absolute;
+}
+.lang{
+    display: flex;
+    padding: 1px 55px;
+}
+
+.langin{
+    border: 1px solid  #d3dbea;
+    display: flex;
+    height: 33px;
+    margin: 10px 26px;
+}
+.flag{
+    margin: 1px 11px;
+}
+.langn{
+    margin: 7px 21px 7px 14px;
+    color: black;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+
+/* notification dropdown menu of languages it is temporary display block*/
+.dropdown-menu{
+    position: relative;
+    top: 54px;
+    right: 126px;
+    background-color: white;
+    display: none;
+}
+.drpmsgu{
+    padding: 6px;
+    font-weight: 500;
+}
+.drpimg{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+.drpnotify{
+    padding: 3px 7px 2px 9px;
+    border: 1px solid blue;
+    border-radius: 17px;
+    font-size: 11px;
+    margin: 5px 6px;
+    color: blue;
+}
+.userthumbnail{
+    padding: 13px;
+}
+.usermessage{
+    display: flex;
+    border-bottom: 1px solid gray;
+}
+.usermessagei{
+    padding: 17px 5px;
+}
+
+
+.small-msg{
+    font-size: 9px;
+    color: grey;
+}
+
+/* this is also a dropdown menu of languages it is temporary display block */
+.drop-downlang{
+    display: none;
+}
+
+
+/* content wrapper */
+.content-wrapper{
+    height: 1000px;
+}
+
+.content-header{
+    display: flex;
+}
+
+
+
+
+.day-frames{
+    display: flex;
+}
+.day-time{
+    align-self: center;
+}
+
+.day-time ul {
+    display: flex;
+    background-color: white;
+    margin: 2px 32px;
+    list-style: none;
+}
+
+.day-time ul li{
+    padding: 6px 10px 7px 21px;
+    border: 1px solid #eee4e4;
+   
+}
+
+
+.calender ul{
+    display: flex;
+    background-color: white;
+    list-style: none;
+    margin: 8px 15px;
+}
+
+.calender ul li{
+    padding: 6px 9px 7px 10px;
+    border: 1px solid #eee4e4;
+}
+a{
+    color: black;
+}
+
+.content-header-action h4{
+    color: black;
+    font-size: 26px;
+    font-family: sans-serif;
+    padding: 7px 15px;
+}
+
+
+
+.text{
+    color: #000000a3;
+    padding: 2px 19px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+
+
+
+/* card section */
+.allcards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.card{
+    height: 218px;
+    border: none;
+    margin: 17px 8px 0px 8px;
+    border-radius: 0px;
+}
+.card-inside1{
+    /* border: 2px solid black; */
+    margin: 10px 10px 10px 10px;
+    height: inherit;
+}
+.card-insidenum2{
+    display: flex;
+}
+.insidenum{
+    margin: 2px 7px;
+}
+.insidename{
+    color: black;
+}
+
+.insidepic span{
+    font-size: -webkit-xxx-large;
+    padding: 10px 26px;
+}
+
+.card-insidegraph2{
+    border: 1px solid rgb(248, 245, 245);
+    height: 116px;
+    width: 182px;
+    margin: 2px 3px 2px 13px;
+}
+
+.card1{
+    background-color: lightskyblue;
+}
+.card2{
+    background-color: #2aa32a;
+}
+.card3{
+    background-color: #0794df;
+}
+.card4{
+    background-color: #ffc107;
+}
+
+
+/* card summary section */
+
+.summery-selling{
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+
+}
+.cardhead{
+    /* border: 2px solid red; */
+    /* text-align: center; */
+   background-color: white;
+    padding: 19px 34px;
+    margin: 17px 8px 0px 8px;
+    border-bottom: 2px solid #eaeff8;
+}
+.cardbody{
+    /* border: 2px solid red; */
+    margin: 0px 8px;
+    padding: 39px 24px;
+    display: inline-block;
+    background: white;
+}
+
+.cardbodyproductnav{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.cardnavitem{
+    padding: 17px 20px;
+}
+
+.itemdetail{
+    font-family: 'Times New Roman', Times, serif;
+}
+.itemdetail h5{
+    font-family: sans-serif;
+    padding: 0px 18px;
+    font-size: 19px;
+    color: black;
+}
+
+
+/* selling product */
+.cardsell{
+    background-color: white;
+    margin: 18px 7px 4px 3px;
+}
+.ulproducts{
+    /* border: 2px solid red; */
+    margin: 0px 8px;
+    list-style: none;
+}
+.products{
+    display: flex;
+    border-top: 2px solid #eaeff8;
+}
+
+.prd-pic{
+    padding: 27px 16px;
+}
+.prd-name{
+    display: flex;
+}
+.tx{
+    color: black;
+    font-family: system-ui;
+}
+.prdn{
+    text-align: inherit;
+}
+.prd-disc{
+    padding: 19px 29px;
+}
+.prd-price{
+    padding: 19px 29px;
+}
+
+
+
+
+/* avtivity container */
+.activitys{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.activity1 ,.activity2,.activity3 {
+    /* border: 2px solid green; */
+    background: white;
+    margin: 20px 9px;
+}
+.acthead1{
+    padding: 17px 24px;
+    border-bottom: 2px solid #eaeff8;
+}
+.actul{
+    list-style: none;
+    padding: 6px 8px;
+}
+
+.actli{
+    display: flex;
+    justify-content: space-around;
+    padding: 25px 0px;
+}
+
+.actli::before{
+    content: "";
+    position: relative;
+    left: 38px;
+    top: 53px;
+    bottom: 0px;
+    height: 60px;
+    display: block;
+    width: 2px;
+    background: #1864b1;
+}
+.acticon{
+    margin: 2px 13px;
+}
+.acticon span{
+    background: yellowgreen;
+    padding: 14px 14px;
+    border-radius: 71%;
+}
+.actdetail h6{
+    font-family: sans-serif;
+    padding: 0px 18px;
+    font-size: 19px;
+}
+.last-seen{
+    color: grey;
+}
+
+
+
+/* activity container 2 */
+.actheader{
+    font-size: 24px;
+    padding: 17px;
+    font-family: sans-serif;
+}
+.actpara{
+    font-family: -webkit-pictograph;
+    padding: 28px;
+    color: grey;
+    padding: 15px 0px 9px 4px;
+}
+.actlinks{
+    color: blue;
+    padding: 3px 28px 0px 3pc;
+    font-family: sans-serif;
+    font-weight: 700;
+}
+.actfooter{
+    display: flex;
+    margin: 119px 0px 7px 2px;
+    border-top: 1px solid grey;
+    padding: 17px;
+}
+.seen{
+    font-size: 13px;
+    color: #646262;
+    font-weight: bolder;
+}
+.linkonline{
+    color: white;
+    padding: 3px 13px;
+    margin: 1px 9px 0px 17px;
+    border-radius: 10px;
+    font-family: sans-serif;
+}
+
+
+
+/* activity container 3 */
+.actuser{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+
+}
+.actli3{
+    display: flex;
+    padding: 28px 11px;
+}
+.actusername{
+    font-size: 14px;
+}
+.actorderid{
+    color: gray;
+}
+.actuserdetail{
+    padding: 7px 12px;
+}
+.actuserorderi{
+    width: 50px;
+    height: 50px;
+    border-radius: 40%;
+}
+/* normal normal normal 24px/1 "Material Design Icons" */
